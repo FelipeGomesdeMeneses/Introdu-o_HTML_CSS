@@ -1,0 +1,50 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;/*espaço externo*/
+    margin: 0;/*espaço externo*/
+
+}
+
+#cabecalho{
+    background-color: #ed8d1f;
+    display: flex;/*ativo o flexbox para poder alinhar os meus elementos filhos*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#cabecalho > img{
+    width: 200px;/*largura*/
+    height: 200px;/*largura*/
+}
+
+#cabecalho > nav{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+#cabecalho > nav > a{
+    color: #000;
+    text-decoration: none;/*a decoração do texto, neste cado , o link */
+    font-size: 25px;
+}
+
+#div > img{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+
+#div > h3 {
+    font-size: 30px;
+    color: green;
+}
+
+#div > span{
+    font: bold;
+    font-size: 25px;
+   color: green;
+}

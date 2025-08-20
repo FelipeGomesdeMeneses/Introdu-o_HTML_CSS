@@ -9,11 +9,11 @@
     <meta name="description" content="Site com o proposito de explicar o HTML como ao todo.">
     <title>Introdução ao HTML</title>
 
-    <link rel="shortcut icon" href="./transferir (2).jpg" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="../Arquivos/transferir (2).jpg type=" image</x-icon">
+
     <!--atributo rel indica a relação-->
     <!--atributo href a referencia, ou seja, a inincialização-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Estilização/style.css">
 
 </head>
 
@@ -23,14 +23,14 @@
     <h1 style="">Tela principal sobre a Amazon</h1> <!--h1 por boas praticas so chamamos somente 1 vez-->
 
     <header id="cabecalho">
-        <img id="logo" src="./transferir (2).jpg" alt="Imagem de logo" >
+        <img id="logo" src="../Arquivos/transferir (2).jpg" alt="Imagem de logo">
 
-        <nav id="nav">
+        <article id="nav">
             <a href="https://www.amazon.com.br/">Link da amazon</a>
             <a href="aula1.html">Inicial</a>
-            <a href="S02 - HTML - Introdução e Semântica.pdf" download>Saiba mais</a>
+            <a href="../Arquivos/S02 - HTML - Introdução e Semântica.pdf" download>Saiba mais</a>
 
-        </nav>
+        </article>
 
     </header>
 
@@ -40,39 +40,53 @@
         <section>
             <h2>Modelos de Fones</h2>
 
-            <div id="div">
-                <img src="./51lsPHwhdmL._AC_UL480_FMwebp_QL65_.webp" alt="Fone1">
-                <h3>Redmi Buds lite 6</h3>
-                <span id="preco">185,00</span>
+            <div id="container-flex-produto">
+
+                <article class="card-produto">
+                    <img src="../Arquivos/51lsPHwhdmL._AC_UL480_FMwebp_QL65_.webp" alt="Fone1">
+                    <h3>Xiaomi Redmi Buds lite 6</h3>
+                    <span id="preco">185,00</span>
+                </article>
+
+                <article class="card-produto">
+                    <img src="../Arquivos/51bG0CZ0dTL._AC_UL480_FMwebp_QL65_.webp" alt="Fone2">
+                    <h3>Xiaomi Redmi Buds 6 Play</h3>
+                    <span id="preco">145,00</span>
+                </article>
+
+                <article class="card-produto">
+                    <img src="../Arquivos/51DVGGv77KL._AC_UL480_FMwebp_QL65_.webp" alt="Fone3">
+                    <h3>Xiaomi Mi Redmi Buds 3 Lite</h3>
+                    <span id="preco">125,00</span>
+                </article>
+
+
             </div>
+
         </section>
 
-        <section>
+        <section id="container-flex-suporte">
             <h2>Suporte ao cliente</h2>
             <!-- tag dorm de formulário-->
             <form>
                 <label for="">Nome completo:</label>
-                <input type="text" placeholder="Digite seu nome completo" id="campo-nomecompleto">
+                <input  type="text" placeholder="Digite seu nome completo" id="" class="caixa-texto">
 
-                <br /> <!-- Quebra a linha-->
 
                 <label for="campo-email">E-mail</label>
-                <input type="email" name="" id="campo-email">
+                <input  type="email" name="" id="" class="caixa-texto">
 
-                <br /> <!-- Quebra a linha-->
 
 
                 <label for="campo-senha">Senha: </label>
-                <input type="password" name="" id="campo-senha">
+                <input  type="password" name="" id="" class="caixa-texto">
 
-                <br /> <!-- Quebra a linha-->
 
 
                 <label for="campo-upload">Upload: </label>
-                <input type="file" name="" id="campo-upload">
+                <input  type="file" name="" id="" class="caixa-texto">
 
-                <br />
-                
+
                 <label for="estado">Estado: </label>
                 <select name="estado" id="estado">
                     <option value="" selected disabled> Selecione uma opção</option>
@@ -103,35 +117,30 @@
                     <option value="SP">SP</option>
                     <option value="SE">SE</option>
                     <option value="TO">TO</option>
-                  </select>
-                  
-                <br/>
-                
-                <input type="checkbox" name="" id="">
+                </select>
+
+
+                <input  type="checkbox" name="" id="" class="caixa-texto">
                 <label for="">li e concordo com os termos</label>
 
-                <br/>
-                
+
                 <label for="">Sexo</label>
 
-                <br/>
-                
+
                 <label for="">Feminino</label>
-                <input type="radio" name="opcao-genero" id="" value= "Feminino">
-                
+                <input  type="radio" name="opcao-genero" id="" value="Feminino" class="caixa-texto">
+
                 <label for="">Masculino</label>
-                <input type="radio" name="opcao-genero" id="" value= "Masculino">
-                
-                <br/>
-                  <!-- atributo required torna o campo obrigatorio-->
-                  
-                  <label for="">Descrição</label>
-                  <textarea name="" id="" required></textarea>
+                <input  type="radio" name="opcao-genero" id="" value="Masculino" class="caixa-texto">
 
-                  <br/>
+                <!-- atributo required torna o campo obrigatorio-->
 
-                  <button type="submit">Enviar</button>
-                  <button type="reset">Limpar</button>
+                <label for="">Descrição</label>
+                <textarea name="" id="" required></textarea>
+
+
+                <button class="botao" type="submit" >Enviar</button class="botao">
+                <button class="botao" type="reset">Limpar</button>
 
             </form>
         </section>

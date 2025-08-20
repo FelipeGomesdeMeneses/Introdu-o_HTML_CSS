@@ -1,0 +1,119 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /*espaço externo*/
+    margin: 0;
+    /*espaço externo*/
+
+    box-sizing: border-box;
+
+
+}
+
+#cabecalho {
+    background-color: #ed8d1f;
+    display: flex;
+    /*ativo o flexbox para poder alinhar os meus elementos filhos*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#cabecalho>img {
+    width: 200px;
+    /*largura*/
+    height: 200px;
+    /*largura*/
+}
+
+#cabecalho>nav {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+#cabecalho>nav>a {
+    color: #000;
+    text-decoration: none;
+    /*a decoração do texto, neste cado , o link */
+    font-size: 25px;
+}
+
+
+/* section seção produtos */
+#container-flex-produto {
+    /* background-color: #ed8d1f; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.card-produto{
+    /* background-color: rgb(255, 183, 0); */
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 10px;
+}
+
+.card-produto>img {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+h1{
+position: absolute;
+opacity: 0;
+
+}
+
+
+#container-flex-suporte{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0px;
+
+}
+
+
+form{
+    background-color: #0af3ff;
+    width: 500px;
+    height: 100%;
+    border: 5px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-texto{
+    height: 35px;
+    border: 1px solid #ed8d1f;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.botao{
+    background-color: #ed8d1f;
+    width: 100px;
+    height: 35px;
+    border: 5px solid #000;
+    border-radius: 10px;
+}
